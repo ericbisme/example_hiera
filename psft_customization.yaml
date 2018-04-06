@@ -7,6 +7,11 @@
 # run_preboot_config_setup:  true # ACM Configuration run prior to  domain boot
 # run_postboot_config_setup: true # ACM Configuration run after the domain boot
 
+# point this to an app home archive from an application dpk
+# there are delivered roles that will include the deploy of this app home from
+# duringthe puppet run
+app_archive_location:  /path/to/PS_APP_HOME/archive
+
 db_name:           FS85522C
 db_user:           VP1 # This is the user that starts your application servers
 db_user_pwd:       <DB_USER_PWD>
